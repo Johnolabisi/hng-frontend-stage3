@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+:root {
+  /* Colors */
+   --primary-orange: hsl(195 85% 45%);       
+  --primary-orange-light: hsl(190 75% 65%); 
+  --neutral-dark: hsl(220 25% 15%);        
+  --neutral-darker: hsl(220 20% 20%);       
+  --neutral-light: hsl(210 15% 97%);        
+  --surface-light: hsl(210 20% 92%);        
+  --surface-lighter: hsl(210 15% 95%);     
+  --divider-color: hsl(210 15% 85%);        
+  --status-error: hsl(355 85% 55%); 
+  
+  /* Font sizes */
+  --font-size-label: 12px;
+  --font-size-input: 14px;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Manrope Bold";
+  src: url("./assets/fonts/static/Manrope-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Manrope Regular';
+  src: url("./assets/fonts/static/Manrope-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Manrope Medium";
+  src: url("./assets/fonts/static/Manrope-Medium.ttf") format("truetype");
+}
+
+@layer components {
+  button.button1 {
+    width: 160px;
+    height: 48px;
+    background-color: var(--color-brown-1);
+  }
+  
+  button.button1:hover {
+    background-color: var(--color-brown-2);
+  }
+  
+  button.filledBrown2 {
+    width: 160px;
+    height: 48px;
+    background-color: var(--color-brown-2);
+  }
+  
+  button.button2 {
+    width: 160px;
+    height: 48px;
+    border: 1px solid var(--color-black-1);
+    background-color: white;
+  }
+  
+  button.button2:hover {
+    border: 1px solid var(--color-black-1);
+    background-color: var(--color-black-1);
+  }
+}
+
+/* === Global Typography === */
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 100%;
+  background-color: white;
+  font-size: 15px;
+  line-height: 25px;
+  color: black;
+  letter-spacing: normal;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Manrope Bold", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Individual heading styles */
+h1 {
+  line-height: 58px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.5px;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.15px;
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 2px;
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 1.7px;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1.3px;
+}
+
+small {
+  font-size: 12px;
+}
+
+/* Overline */
+.overline {
+  font-family: "Manrope Regular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Subtitle */
+.subtitle {
+  font-family: "Manrope Bold", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 8px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-black-1);
+  font-family: "Manrope Regular", sans-serif;
+  opacity: 0.4;
+}
